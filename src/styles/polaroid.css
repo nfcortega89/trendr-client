@@ -1,0 +1,68 @@
+.vote-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 51px;
+}
+.vote-stats {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.vote-stats svg {
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+}
+.vote-stats-left {
+  display: flex;
+  align-items: center;
+}
+.vote-divider {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.vote-count {
+  font-family: 'Open Sans'
+}
+.downvote {
+  transform: rotateZ(180deg);
+}
+.polaroid .vote {
+  cursor: pointer;
+  fill: rgba(76, 67, 67, 0.78);
+  transition: fill 0.4s ease;
+}
+.polaroid .vote.downvote:hover {
+  fill: rgba(236, 67, 92, 0.78);
+  transition: fill 0.4s ease;
+}
+.polaroid .vote:hover {
+  fill: rgba(35, 186, 136, 0.78);
+  transition: fill 0.4s ease;
+}
+.vote-validate {
+  opacity: 0;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "helvetica neue";
+  color: #5d809a;
+}
+.vote-validate.show {
+  animation: flash 1.2s;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

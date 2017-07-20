@@ -1,0 +1,14 @@
+.image-container {
+  width: 100%;
+  position: relative;
+}
+.image-item {
+  width: 100%;
+}
+.delete-btn {
+  font-size: 18px;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

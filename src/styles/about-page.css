@@ -1,0 +1,26 @@
+.alt-header {
+  letter-spacing: 4px;
+  color: black;
+  font-family: "helvetica neue", sans-serif;
+  text-transform: uppercase;
+}
+.about-container {
+  height: calc(100vh - 94px);
+  margin-top: 70px;
+  padding: 0 10%;
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  align-items: center;
+}
+.about {
+  font-family: "Roboto Slab", serif;
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.07em;
+}
+vr {
+  border: 1px solid black;
+  height: 155px;
+  margin: 0px 70px;
+}
