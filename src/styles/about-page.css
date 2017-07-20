@@ -13,6 +13,12 @@
   border: 1px solid black;
   align-items: center;
 }
+.about-container vr {
+  display: block;
+}
+.about-container hr {
+  display: none;
+}
 .about {
   font-family: "Roboto Slab", serif;
   text-align: justify;
@@ -23,4 +29,25 @@ vr {
   border: 1px solid black;
   height: 155px;
   margin: 0px 70px;
+}
+hr {
+  border: 1px solid black;
+  width: 80%;
+  height: 0px;
+  margin: 20px 0;
+}
+@media screen and (max-width: 767px) {
+  .about-container hr {
+    display: block;
+  }
+  .about-container vr {
+    display: none;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .alt-header {
+    margin-top: 50px;
+    font-size: 2em;
+  }
 }
