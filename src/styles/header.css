@@ -1,7 +1,7 @@
 .header {
-  display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
+  display: flex;
   left: 0;
   width: 100%;
   z-index: 10;
@@ -69,6 +69,7 @@
   }
   .header {
     padding: 0 6%;
+    position: fixed;
   }
   .dropdown {
     z-index: 0;

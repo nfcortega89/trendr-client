@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { withRouter } from 'react-router-dom'
 import {connect} from 'react-redux'
 import Lightbox from './Lightbox'
 import {bindActionCreators} from 'redux'
@@ -24,13 +25,14 @@ class Polaroid extends Component {
     this.showLightbox = this.showLightbox.bind(this)
     this.onLightboxClose = this.onLightboxClose.bind(this)
   }
-  onDelete() {
+  onDelete(e) {
+    e.stopPropagation()
     this.props.actions.imageDeleteRequest(this.props.image._id)
   }
   renderDeleteButton() {
     if (this.props.admin) {
       return (
-        <div className="delete-btn" onClick={() => this.onDelete()}>
+        <div className="delete-btn" onClick={(e) => this.onDelete(e)}>
           <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
             <path d="M0 0h24v24H0z" fill="none"/>
@@ -54,14 +56,15 @@ class Polaroid extends Component {
   }
   vote(direction) {
     const options = { userId: this.props.userId, imageId: this.props.image._id }
+    const categoryOptions = { params: { category_id: this.props.match.params.category_id } }
     if (!this.props.userId) {
       return this.showLoginRequired()
     }
     switch(direction) {
       case 'up':
-        return this.props.actions.upvoteRequest(options)
+        return this.props.actions.upvoteRequest(options, categoryOptions)
       case 'down':
-        return this.props.actions.downvoteRequest(options)
+        return this.props.actions.downvoteRequest(options, categoryOptions)
       default: return
     }
   }
@@ -157,4 +160,4 @@ Polaroid.propTypes = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Polaroid)
+)(withRouter(Polaroid))

@@ -77,34 +77,18 @@ export function imageDeleteRequest(imageId) {
   }
 }
 
-export const VOTE_POST_SUCCESS = "VOTE_POST_SUCCESS"
-export const VOTE_POST_FAIL = "VOTE_POST_FAIL"
 
-export function voteSuccess(data) {
-  return {
-    type: VOTE_POST_SUCCESS,
-    payload: data
-  }
-}
-export function voteFail(data) {
-  return {
-    type: VOTE_POST_FAIL,
-    payload: data
-  }
-}
-export function upvoteRequest(options = {}) {
+export function upvoteRequest(options = {}, categoryOptions = {}) {
   return (dispatch) => {
     axios.post(API_URL + '/api/images/upvote', options)
-      .then(res => {
-          dispatch(voteSuccess(res.data))})
-      .catch(err => dispatch(voteFail(err)))
+      .then(() => dispatch(imageDataRequest(categoryOptions)))
+      .catch(err => console.error(err))
   }
 }
-export function downvoteRequest(options = {}) {
+export function downvoteRequest(options = {}, categoryOptions = {}) {
   return (dispatch) => {
     axios.post(API_URL + '/api/images/downvote', options)
-      .then(res => {
-          dispatch(voteSuccess(res.data))})
-      .catch(err => dispatch(voteFail(err)))
+      .then(() => dispatch(imageDataRequest(categoryOptions)))
+      .catch(err => console.error(err))
   }
 }

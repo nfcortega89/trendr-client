@@ -8,6 +8,7 @@ const intialState = {
 
 export default function(state = intialState, action) {
   if (action.type === actions.IMAGE_FETCH_SUCCESS) {
+    console.log(action.payload)
     const images = action.payload.map((image, index) => {
       image.index = index
       return image
@@ -32,13 +33,6 @@ export default function(state = intialState, action) {
         [action.payload.category]: action.payload.url
       })
       return Object.assign({}, state, { featuredImages })
-  } else if (action.type === actions.VOTE_POST_SUCCESS) {
-      let images = state.images
-      const index = images.map(image => image._id).indexOf(action.payload._id)
-      images.splice(index, 1, action.payload)
-      return Object.assign({}, state, {
-        images
-      })
   } else if (action.type === actions.IMAGE_FAILURE) {
     return state
   }

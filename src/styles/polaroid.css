@@ -66,3 +66,8 @@
     opacity: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .col.single {
+    pointer-events: none;
+  }
+}

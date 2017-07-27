@@ -87,3 +87,32 @@
 .col.single {
   height: 100%;
 }
+@media screen and (max-width: 767px)  {
+  .polaroid {
+    padding: 10px 10px 0px 10px;
+  }
+  .col.single {
+    padding: 50%;
+  }
+  .row.main {
+    flex-direction: column;
+  }
+  .col.left {
+    width: 100%;
+  }
+  .col.right {
+    width: 100%;
+  }
+  .row.small {
+    width: 100%;
+    display: block;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .row.small .polaroid:first-child,
+  .row.triplet .polaroid:first-child,
+  .row.top .polaroid:first-child {
+    margin-top: 0;
+  }
+}

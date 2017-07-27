@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
@@ -58,9 +58,6 @@ class Header extends Component {
       open: !isOpen
     })
   }
-  // willReceiveProps(nextProps) {
-  //
-  // }
   render() {
     return (
       <div className="header">
@@ -71,7 +68,7 @@ class Header extends Component {
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
           </svg>
         </div>
-        <div className={this.state.open ? 'dropdown open' : 'dropdown'}>
+        <div className={this.state.open ? 'dropdown open' : 'dropdown'} onClick={() => { this.toggleMenu() }} >
           <Link className="nav-links" to="/">Home</Link>
           <Link className="nav-links" to="/about">About</Link>
           <span onClick={this.signInWithGoogle} className="nav-links">{this.props.user && this.props.user.uid ? 'logout' : 'login'}</span>
@@ -101,4 +98,4 @@ Header.propTypes = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Header)
+)(withRouter(Header))
