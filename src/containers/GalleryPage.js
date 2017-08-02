@@ -24,8 +24,6 @@ class GalleryPage extends Component {
     })
   }
   render() {
-    // map through chunks of 8 and pass row main
-    // make row main component
     return (
       <div className="gallery-container">
         <h1 className="title">{this.props.match.params.category_id}</h1>
