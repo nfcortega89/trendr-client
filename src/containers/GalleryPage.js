@@ -26,8 +26,10 @@ class GalleryPage extends Component {
   render() {
     return (
       <div className="gallery-container">
-        <h1 className="title">{this.props.match.params.category_id}</h1>
-        <div className="title-line"></div>
+        <div className="title-container">
+          <h1 className="title">{this.props.match.params.category_id}</h1>
+          <div className="title-line"></div>
+        </div>
         {this.renderImages()}
       </div>
     )

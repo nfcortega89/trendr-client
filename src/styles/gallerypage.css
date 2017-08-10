@@ -1,43 +1,34 @@
-.gallery-container {
+.title-container {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  flex: 1 0 100%;
+  width: 100%;
   justify-content: center;
-  align-items: center;
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #2e2e2e;
 }
 .title {
+  text-align: center;
   font-family: 'Helvetica Neue';
   color: #dbc554;
   font-size: 4em;
   text-transform: uppercase;
   margin: 10px;
+  flex: 1 1 100%;
 }
 .title-line {
   border-bottom: 1px dashed white;
   width: 55%;
-  margin-bottom: 0.5em;
+  margin: 0 auto 15px;
 }
-.polaroid {
-  position: relative;
-  height: calc(100% - 80px);
-  width: calc(100% - 40px);
-  padding: 10px 10px 50px 10px;
-  border: 1px solid #d9cece;
-  margin: 10px;
-  background-color: #f5f5f9;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-  transition: all .3s ease-in-out;
-}
-/*.polaroid:hover {
-  transform: scale(1.04) rotate3d(1, 2, -1, 5deg);
-  z-index: 1;
-  position: relative;
-  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.1);
-  transition: all 1s ease-in-out;
-}*/
 .row.main {
   display: flex;
-  flex: 1;
+  flex: 1 1 100%;
   min-height: 120vh;
   max-width: 800px;
   min-width: 320px;
@@ -46,7 +37,6 @@
 .col {
   position: relative;
   background-size: cover;
-  background-position: 20;
   background-repeat: no-repeat;
 }
 .col.left {
@@ -55,7 +45,8 @@
   flex: 8;
 }
 .row.top {
-  flex: 1;
+  flex: 1 1 100%;
+  display: flex;
 }
 .row.bottom {
   flex: 1;
@@ -68,7 +59,8 @@
   flex: 5;
 }
 .row.triplet {
-  flex: 1;
+  display: flex;
+  flex: 1 1 100%;
 }
 .row.small {
   display: flex;
@@ -86,22 +78,31 @@
 }
 .col.single {
   height: 100%;
+  flex: 1 1 100%
 }
 @media screen and (max-width: 767px)  {
-  .polaroid {
+  /*.polaroid {
     padding: 10px 10px 0px 10px;
-  }
+  }*/
   .col.single {
     padding: 50%;
   }
   .row.main {
+    flex: 1;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100%;
+    max-height: 100%;
   }
   .col.left {
+    display: inline;
     width: 100%;
+    height: 100%;
   }
   .col.right {
     width: 100%;
+    height: 100%;
   }
   .row.small {
     width: 100%;
@@ -114,5 +115,10 @@
   .row.triplet .polaroid:first-child,
   .row.top .polaroid:first-child {
     margin-top: 0;
+  }
+  .gallery-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }

@@ -49,11 +49,19 @@
   color: white;
 }
 @media screen and (max-width: 767px)  {
+  .category-wrapper:hover {
+    flex: 1;
+    transition: none;
+  }
   .category-list {
     flex-direction: column;
+    height: calc(100vh - 94px);
   }
   .category-item {
     height: calc(25vh - 23px);
     filter: grayscale(0);
+  }
+  .category-item:hover {
+    background-color: transparent;
   }
 }
