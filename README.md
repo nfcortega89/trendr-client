@@ -3,16 +3,16 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
 
 <b>Getting Started</b>
 
-	Installing
-    Git clone https://github.com/nfcortega89/trendr-client
-    Cd trendr-client
-    Npm install
+	Installing<br/>
+    <li>Git clone https://github.com/nfcortega89/trendr-client</li>
+    <li>Cd trendr-client</li>
+    <li>Npm install</li>
 
   Launching
-    Npm start
+    <li>Npm start</li>
 
   Testing
-    Npm test
+    <li>Npm test</li>
 
 <b>Introduction</b>
 
