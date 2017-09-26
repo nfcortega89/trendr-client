@@ -20,6 +20,7 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
 	The main focus of Trendr is to have users vote on curated images and based on the votes, they are sorted and returned to show the most trending picture for that category.
 
 <b>How it works</b>
+
 	Pictures - To be able to create a board, Trendr uses images from live Instagram accounts.
   Voting - To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
 <br></br>
