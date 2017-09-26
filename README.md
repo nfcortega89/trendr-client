@@ -3,7 +3,7 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
 
 <b>Getting Started</b>
 
-	Installing<br/>
+	Installing
     <li>Git clone https://github.com/nfcortega89/trendr-client</li>
     <li>Cd trendr-client</li>
     <li>Npm install</li>
@@ -22,7 +22,6 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
 
 	Pictures
     To be able to create a board, Trendr uses images from live Instagram accounts.
-
   Voting
     To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
 
@@ -37,7 +36,7 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
     Node.js + Express.js
     MongoDB + Mongoose
     Mocha + Chai
-    Continues integration and deployment with Travis CI
+    Continuous integration and deployment with Travis CI
 
   Responsive
     The app is fully responsive and quickly adapts to mobile and desktop viewports
