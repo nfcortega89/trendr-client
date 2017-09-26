@@ -6,10 +6,11 @@ Getting Started
 	Installing
     ¬	Git clone https://github.com/nfcortega89/trendr-client
     ¬	Cd trendr-client
-    ¬	Npm init
-    ¬	Yarn
+    ¬	Npm install
+
   Launching
     ¬	Npm start
+
   Testing
     ¬	Npm test
 
@@ -19,6 +20,7 @@ Introduction
 
 
 How it works
+
 	Pictures
     ¬	To be able to create a board, Trendr uses images from live Instagram accounts.
 
@@ -26,16 +28,20 @@ How it works
     ¬	To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
 
 Technology
+
 	Frontend
     ¬	HTML5
     ¬	CSS3
     ¬	Javascript
+
  	Backend
     ¬	Node.js + Express.js
     ¬	MongoDB + Mongoose
     ¬	Mocha + Chai
     ¬	Continues integration and deployment with Travis CI
+
   Responsive
     ¬	The app is fully responsive and quickly adapts to mobile and desktop viewports
-Security
-    ¬	User login is handled through firebase login 
+
+  Security
+    ¬	User login is handled through firebase login
