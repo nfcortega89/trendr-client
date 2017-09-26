@@ -14,9 +14,9 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
   Testing
     Npm test
 
-<b>Introduction</br>
+<b>Introduction</b>
 
-	<p>The main focus of Trendr is to have users vote on curated images and based on the votes, they are sorted and returned to show the most trending picture for that category.</p>
+	The main focus of Trendr is to have users vote on curated images and based on the votes, they are sorted and returned to show the most trending picture for that category.
 
 <b>How it works</b>
 
