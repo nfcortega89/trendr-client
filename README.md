@@ -4,43 +4,43 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
 <b>Getting Started</b>
 
 	Installing
-    - Git clone https://github.com/nfcortega89/trendr-client
-    -	Cd trendr-client
-    -	Npm install
+    Git clone https://github.com/nfcortega89/trendr-client
+    Cd trendr-client
+    Npm install
 
   Launching
-    -	Npm start
+    Npm start
 
   Testing
-    -	Npm test
+    Npm test
 
-Introduction
+<b>Introduction</br>
 
-	The main focus of Trendr is to have users vote on curated images and based on the votes, they are sorted and returned to show the most trending picture for that category.
+	<p>The main focus of Trendr is to have users vote on curated images and based on the votes, they are sorted and returned to show the most trending picture for that category.</p>
 
-How it works
+<b>How it works</b>
 
 	Pictures
-    -	To be able to create a board, Trendr uses images from live Instagram accounts.
+    To be able to create a board, Trendr uses images from live Instagram accounts.
 
   Voting
-    -	To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
+    To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
 
-Technology
+<b>Technology</b>
 
 	Frontend
-    -	HTML5
-    -	CSS3
-    -	Javascript
+    HTML5
+    CSS3
+    Javascript
 
  	Backend
-    -	Node.js + Express.js
-    -	MongoDB + Mongoose
-    -	Mocha + Chai
-    -	Continues integration and deployment with Travis CI
+    Node.js + Express.js
+    MongoDB + Mongoose
+    Mocha + Chai
+    Continues integration and deployment with Travis CI
 
   Responsive
-    -	The app is fully responsive and quickly adapts to mobile and desktop viewports
+    The app is fully responsive and quickly adapts to mobile and desktop viewports
 
   Security
-    -	User login is handled through firebase login
+    User login is handled through firebase login
