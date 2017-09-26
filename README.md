@@ -20,10 +20,8 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
 
 <b>How it works</b>
 
-	Pictures
-    To be able to create a board, Trendr uses images from live Instagram accounts.
-  Voting
-    To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
+	Pictures - To be able to create a board, Trendr uses images from live Instagram accounts.
+  Voting - To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
 
 <b>Technology</b>
 
@@ -38,8 +36,6 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
     Mocha + Chai
     Continuous integration and deployment with Travis CI
 
-  Responsive
-    The app is fully responsive and quickly adapts to mobile and desktop viewports
+  Responsive - The app is fully responsive and quickly adapts to mobile and desktop viewports
 
-  Security
-    User login is handled through firebase login
+  Security - User login is handled through firebase login
