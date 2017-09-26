@@ -1,7 +1,7 @@
 Trendr is a responsive full-stack app that allows users to view a curated board and vote on pictures, thus producing “the most trending picture”.
 
 
-Getting Started
+<b>Getting Started</b>
 
 	Installing
     - Git clone https://github.com/nfcortega89/trendr-client
