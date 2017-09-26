@@ -4,7 +4,7 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
 <b>Getting Started</b>
 
 	Installing
-  
+
     Git clone https://github.com/nfcortega89/trendr-client
     Cd trendr-client
     Npm install
@@ -21,8 +21,8 @@ Trendr is a responsive full-stack app that allows users to view a curated board 
 
 <b>How it works</b>
 
-	Pictures - To be able to create a board, Trendr uses images from live Instagram accounts.
-  Voting - To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
+	##Pictures - To be able to create a board, Trendr uses images from live Instagram accounts.
+  ##Voting - To be able to vote on images, users have to sign in. Users not logged-in can still browse, just not vote.
 
 <b>Technology</b>
 
