@@ -34,7 +34,6 @@
 .category-item:hover {
   filter: grayscale(0);
   transition: all 0.4s ease-in-out;
-
 }
 .category-item span {
   font-size: 1.4em;
@@ -44,11 +43,34 @@
   justify-content: center;
   letter-spacing: 0.2em;
   font-weight: 900;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   font-family: "Helvetica Neue";
   color: white;
 }
-@media screen and (max-width: 767px)  {
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 15px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 767px) {
   .category-list {
     flex-direction: column;
   }
